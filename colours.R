@@ -8,7 +8,7 @@ dyRup_palettes <- list(
   soft_n_hazy <- c('#F1EEE4', '#D3B6BA', '#B3C4BA', '#75978F', '#3A5F7D', '#645D5F', '#604046')
 )
 
-ggplot2::qplot(x = 1:7, y = 1, fill = I(rev(calm_down_woman)), geom = 'col', width = 1) + ggplot2::theme_void()
+#ggplot2::qplot(x = 1:7, y = 1, fill = I(rev(calm_down_woman)), geom = 'col', width = 1) + ggplot2::theme_void()
 
 dyRup <- function(palette, n, type = c("discrete", "continuous")) {
   type <- match.arg(type)
