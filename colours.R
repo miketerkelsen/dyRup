@@ -1,5 +1,5 @@
 dyRup_palettes <- list(
-  devoid <- c('#25557B', '#F4CE80', '#C4031D'),
+  devoid_of_all_desires <- c('#25557B', '#F4CE80', '#C4031D'),
   calm_down_woman <- c('#ECE4DC', '#EBD9D0', '#BCDBDB', '#C3AC98', '#B98675', '#637D74', '#607B8E'),
   warm_modern <- c('#E5DAC8', '#ABB39E', '#A2B7B5', '#AB6057', '#C09C6A', '#604344', '#464860'),
   brighteyes <- c('#E8EAE6', '#B6B0A9', '#414040', '#ADBAE3', '#A54975', '#4F6997', '#0190A8'),
