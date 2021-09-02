@@ -2,7 +2,8 @@
 % Please edit documentation in R/colours.R
 \name{dyRup}
 \alias{dyRup}
-\title{A Wes Anderson palette generator}
+\title{These are a handful of colour palettes created based on paint colours.
+Devoid of all desires will guaranteed replace your current continuous selection.}
 \usage{
 dyRup(palette, n, type = c("discrete", "continuous"))
 }
@@ -12,10 +13,9 @@ dyRup(palette, n, type = c("discrete", "continuous"))
 \code{brighteyes}, \code{dark_musk},  \code{braveheart}, \code{soft_n_hazy}}
 
 \item{n}{Number of colors desired. Almost all palettes have 7 colors.
-But hopefully we'll add more palettes soon.
 If omitted, uses all colours.}
 
-\item{type}{Either "continuous" or "discrete". Use continuous if you want
+\item{type}{Either 'continuous' or 'discrete'. Use continuous if you want
 to automatically interpolate between colours.
 @importFrom graphics rgb rect par image text}
 }
@@ -23,5 +23,6 @@ to automatically interpolate between colours.
 A vector of colours.
 }
 \description{
-These are a handful of color palettes from Wes Anderson movies.
+These are a handful of colour palettes created based on paint colours.
+Devoid of all desires will guaranteed replace your current continuous selection.
 }
