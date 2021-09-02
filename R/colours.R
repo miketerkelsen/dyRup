@@ -16,42 +16,40 @@ dyRup_palettes <- list(
 
 #ggplot2::qplot(x = 1:7, y = 1, fill = I(rev(calm_down_woman)), geom = 'col', width = 1) + ggplot2::theme_void()
 
-#' A Wes Anderson palette generator
-#'
-#' These are a handful of color palettes from Wes Anderson movies.
+#' These are a handful of colour palettes created based on paint colours.
+#' Devoid of all desires will guaranteed replace your current continuous selection.
 #'
 #' @param n Number of colors desired. Almost all palettes have 7 colors.
-#'   But hopefully we'll add more palettes soon.
 #'   If omitted, uses all colours.
 #' @param palette Name of desired palette. Choices are:
 #'   \code{devoid_of_all_desires}, \code{calm_down_woman},  \code{warm_modern},
 #'   \code{brighteyes}, \code{dark_musk},  \code{braveheart}, \code{soft_n_hazy}
-#' @param type Either "continuous" or "discrete". Use continuous if you want
+#' @param type Either 'continuous' or 'discrete'. Use continuous if you want
 #'   to automatically interpolate between colours.
 #'   @importFrom graphics rgb rect par image text
 #' @return A vector of colours.
 #' @export
 
-dyRup <- function(palette, n, type = c("discrete", "continuous")) {
+dyRup <- function(palette, n, type = c('discrete', 'continuous')) {
   type <- match.arg(type)
 
   pal <- dyRup_palettes[[palette]]
   if (is.null(pal))
-    stop("Palette not found.")
+    stop('Palette not found.')
 
   if (missing(n)) {
     n <- length(pal)
   }
 
-  if (type == "discrete" && n > length(pal)) {
-    stop("Number of requested colors greater than what palette can offer")
+  if (type == 'discrete' && n > length(pal)) {
+    stop('Number of requested colors greater than what palette can offer')
   }
 
   out <- switch(type,
                 continuous = grDevices::colorRampPalette(pal)(n),
                 discrete = pal[1:n]
   )
-  structure(out, class = "palette", palette = palette)
+  structure(out, class = 'palette', palette = palette)
 }
 
 #' @export
@@ -64,8 +62,8 @@ print.palette <- function(x, ...) {
   on.exit(par(old))
 
   image(1:n, 1, as.matrix(1:n), col = x,
-        ylab = "", xaxt = "n", yaxt = "n", bty = "n")
+        ylab = '', xaxt = 'n', yaxt = 'n', bty = 'n')
 
-  rect(0, 0.9, n + 1, 1.1, col = rgb(1, 1, 1, 0.8), border = NA)
-  text((n + 1) / 2, 1, labels = attr(x, "palette"), cex = 1, family = "serif")
+  rect(0, 0.97, n + 1, 1.03, col = rgb(1, 1, 1, 0.4), border = NA)
+  text((n + 1) / 2, 1, labels = attr(x, 'palette'), cex = 1)
 }
