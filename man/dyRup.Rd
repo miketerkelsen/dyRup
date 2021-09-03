@@ -5,17 +5,17 @@
 \title{These are a handful of colour palettes created based on paint colours.
 Devoid of all desires will guaranteed replace your current continuous selection.}
 \usage{
-dyRup(palette, n, type = c("discrete", "continuous"))
+dyRup(palette, number_of_colours, type = c("single", "scale"))
 }
 \arguments{
 \item{palette}{Name of desired palette. Choices are:
 \code{devoid_of_all_desires}, \code{calm_down_woman},  \code{warm_modern},
 \code{brighteyes}, \code{dark_musk},  \code{braveheart}, \code{soft_n_hazy}}
 
-\item{n}{Number of colors desired. Almost all palettes have 7 colors.
+\item{number_of_colours}{Number of colours desired. All but one palette contain 7 colours.
 If omitted, uses all colours.}
 
-\item{type}{Either 'continuous' or 'discrete'. Use continuous if you want
+\item{type}{Either 'single' or 'scale'. Use scale if you want
 to automatically interpolate between colours.
 @importFrom graphics rgb rect par image text}
 }

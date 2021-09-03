@@ -11,6 +11,6 @@ An object of class \code{list} of length 7.
 dyRup_palettes
 }
 \description{
-Use \code{\link{dyRup_palette}} to construct palettes of desired length.
+Complete list of palettes
 }
 \keyword{datasets}

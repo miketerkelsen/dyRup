@@ -17,35 +17,33 @@ dyRup_palettes <- list(
 #' These are a handful of colour palettes created based on paint colours.
 #' Devoid of all desires will guaranteed replace your current continuous selection.
 #'
-#' @param n Number of colors desired. Almost all palettes have 7 colors.
+#' @param number_of_colours Number of colours desired. All but one palette contain 7 colours.
 #'   If omitted, uses all colours.
 #' @param palette Name of desired palette. Choices are:
 #'   \code{devoid_of_all_desires}, \code{calm_down_woman},  \code{warm_modern},
 #'   \code{brighteyes}, \code{dark_musk},  \code{braveheart}, \code{soft_n_hazy}
-#' @param type Either 'continuous' or 'discrete'. Use continuous if you want
+#' @param type Either 'single' or 'scale'. Use scale if you want
 #'   to automatically interpolate between colours.
 #'   @importFrom graphics rgb rect par image text
 #' @return A vector of colours.
 #' @export
 
-dyRup <- function(palette, n, type = c('discrete', 'continuous')) {
+dyRup <- function(palette, number_of_colours, type = c('single', 'scale')) {
   type <- match.arg(type)
 
   pal <- dyRup_palettes[[palette]]
   if (is.null(pal))
-    stop('Palette not found.')
+    stop('No such palette with that name. Spellcheck time!')
 
   if (missing(n)) {
     n <- length(pal)
   }
 
-  if (type == 'discrete' && n > length(pal)) {
-    stop('Number of requested colors greater than what palette can offer')
+  if (type == 'single' && n > length(pal)) {
+    stop('You are walking on thin ice here. 7 is the magic number')
   }
 
-  out <- switch(type,
-                continuous = grDevices::colorRampPalette(pal)(n),
-                discrete = pal[1:n]
+  out <- switch(type, scale = grDevices::colorRampPalette(pal)(n), single = pal[1:n]
   )
   structure(out, class = 'palette', palette = palette)
 }
