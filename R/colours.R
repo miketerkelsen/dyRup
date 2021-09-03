@@ -1,7 +1,5 @@
 #' Complete list of palettes
 #'
-#' Use \code{\link{dyRup_palette}} to construct palettes of desired length.
-#'
 #' @export
 
 dyRup_palettes <- list(
