@@ -1,4 +1,4 @@
-<img src="devoid_of_all_desires.png" width="100" />
+<img src="devoid_of_all_desires.png" width="300" />
 
 # dyRup
 A color palette for R inspired by the Danish company Dyrup
