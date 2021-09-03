@@ -1,4 +1,4 @@
-![](devoid_of_all_desires)
+![](devoid_of_all_desires.png)
 
 # dyRup
 A color palette for R inspired by the Danish company Dyrup
