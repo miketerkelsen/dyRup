@@ -35,15 +35,15 @@ dyRup <- function(palette, number_of_colours, type = c('single', 'scale')) {
   if (is.null(pal))
     stop('No such palette with that name. Spellcheck time!')
 
-  if (missing(n)) {
-    n <- length(pal)
+  if (missing(number_of_colours)) {
+    number_of_colours <- length(pal)
   }
 
-  if (type == 'single' && n > length(pal)) {
+  if (type == 'single' && number_of_colours > length(pal)) {
     stop('You are walking on thin ice here. 7 is the magic number')
   }
 
-  out <- switch(type, scale = grDevices::colorRampPalette(pal)(n), single = pal[1:n]
+  out <- switch(type, scale = grDevices::colorRampPalette(pal)(number_of_colours), single = pal[1:number_of_colours]
   )
   structure(out, class = 'palette', palette = palette)
 }
