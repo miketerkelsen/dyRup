@@ -4,12 +4,12 @@
 
 dyRup_palettes <- list(
   devoid_of_all_desires = c('#25557B', '#F4CE80', '#C4031D'),
-  calm_down_woman = c('#ECE4DC', '#EBD9D0', '#BCDBDB', '#C3AC98', '#B98675', '#637D74', '#607B8E'),
-  warm_modern = c('#E5DAC8', '#ABB39E', '#A2B7B5', '#AB6057', '#C09C6A', '#604344', '#464860'),
-  brighteyes = c('#E8EAE6', '#B6B0A9', '#414040', '#ADBAE3', '#A54975', '#4F6997', '#0190A8'),
-  dark_musk = c('#F2EBE6', '#A0928B', '#935F43', '#3A5F7D', '#3F4C5A', '#464444', '#29545C'),
-  braveheart = c('#EAE9E7', '#F5DEAE', '#F0B9A9', '#A49D70', '#C5394B', '#625141', '#3A5F7D'),
-  soft_n_hazy = c('#F1EEE4', '#D3B6BA', '#B3C4BA', '#75978F', '#3A5F7D', '#645D5F', '#604046')
+  calm_down_woman = rev(c('#ECE4DC', '#EBD9D0', '#BCDBDB', '#C3AC98', '#B98675', '#637D74', '#607B8E')),
+  warm_modern = rev(c('#E5DAC8', '#ABB39E', '#A2B7B5', '#AB6057', '#C09C6A', '#604344', '#464860')),
+  brighteyes = rev(c('#E8EAE6', '#B6B0A9', '#414040', '#ADBAE3', '#A54975', '#4F6997', '#0190A8')),
+  dark_musk = rev(c('#F2EBE6', '#A0928B', '#935F43', '#3A5F7D', '#3F4C5A', '#464444', '#29545C')),
+  braveheart = rev(c('#EAE9E7', '#F5DEAE', '#F0B9A9', '#A49D70', '#C5394B', '#625141', '#3A5F7D')),
+  soft_n_hazy = rev(c('#F1EEE4', '#D3B6BA', '#B3C4BA', '#75978F', '#3A5F7D', '#645D5F', '#604046'))
 )
 
 #ggplot2::qplot(x = 1:7, y = 1, fill = I(rev(calm_down_woman)), geom = 'col', width = 1) + ggplot2::theme_void()
