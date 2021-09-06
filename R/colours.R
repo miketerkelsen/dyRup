@@ -40,7 +40,7 @@ dyRup <- function(palette, number_of_colours, type = c('single', 'scale')) {
   }
 
   if (type == 'single' && number_of_colours > length(pal)) {
-    stop('You are walking on thin ice here. 7 is the magic number')
+    stop('You are walking on thin ice here. 7 is the limit!')
   }
 
   out <- switch(type, scale = grDevices::colorRampPalette(pal)(number_of_colours), single = pal[1:number_of_colours]
