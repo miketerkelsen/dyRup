@@ -8,4 +8,4 @@ install.packages('devtools')
 devtools::install_github('miketerkelsen/dyRup')
 ```
 
-<img src="devoid_of_all_desires2.png" width="800" height="100" />
+<img src="devoid_of_all_desires2.png" width="800" height="300" />
