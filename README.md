@@ -10,14 +10,14 @@ devtools::install_github('miketerkelsen/dyRup')
 
 <img src="devoid_of_all_desires2.png" width="800" height="300" />
 
-<img src="calm_down_woman.png" width="800" height="300" />
+<img src="calm_down_woman.png" width="700" height="300" />
 
-<img src="warm_moderm.png" width="800" height="300" />
+<img src="warm_moderm.png" width="700" height="300" />
 
-<img src="brighteyes.png" width="800" height="300" />
+<img src="brighteyes.png" width="700" height="300" />
 
-<img src="dark_musk.png" width="800" height="300" />
+<img src="dark_musk.png" width="700" height="300" />
 
-<img src="braveheart.png" width="800" height="300" />
+<img src="braveheart.png" width="700" height="300" />
 
-<img src="soft_n_hazy.png" width="800" height="300" />
+<img src="soft_n_hazy.png" width="700" height="300" />
