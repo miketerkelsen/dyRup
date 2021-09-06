@@ -7,3 +7,5 @@ A color palette for R inspired by the Danish company Dyrup
 install.packages('devtools')
 devtools::install_github('miketerkelsen/dyRup')
 ```
+
+<img src="devoid_of_all_desires2.png" width="800" height="100" />
